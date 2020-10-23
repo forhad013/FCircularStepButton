@@ -46,28 +46,27 @@ Step 2. Add the dependency
 * start animation
 
  animation = new ArcAngleAnimation(fCircularStepButton);
-        animation.setDuration(1000);
-        animation.setAnimationListener(new Animation.AnimationListener() {
-            @Override
-            public void onAnimationStart(Animation animation) {
-                fCircularStepButton.setEnabled(false);
+ animation.setDuration(1000);
+ animation.setAnimationListener(new Animation.AnimationListener() {
+ @Override
+ public void onAnimationStart(Animation animation) {
+      fCircularStepButton.setEnabled(false);
+ }
+
+ @Override
+  public void onAnimationEnd(Animation animation) {
+     if(fCircularStepButton.getCurrentStep() < fCircularStepButton.getNumberOfSteps() -1) {
+           fCircularStepButton.setEnabled(true);
+           currentPosition++;
+           fCircularStepButton.setCurrentStep(currentPosition);
+           fCircularStepButton.setShouldAnimate(false);
+           fCircularStepButton.invalidate();
+           setViewForCurrentStep(currentPosition);
+         }else{
+                 // go to next page
             }
 
-            @Override
-            public void onAnimationEnd(Animation animation) {
-
-                if(fCircularStepButton.getCurrentStep() < fCircularStepButton.getNumberOfSteps() -1) {
-                    fCircularStepButton.setEnabled(true);
-                    currentPosition++;
-                    fCircularStepButton.setCurrentStep(currentPosition);
-                    fCircularStepButton.setShouldAnimate(false);
-                    fCircularStepButton.invalidate();
-                    setViewForCurrentStep(currentPosition);
-                }else{
-                   // go to next page
-                }
-
-            }
+      }
 
             @Override
             public void onAnimationRepeat(Animation animation) {
