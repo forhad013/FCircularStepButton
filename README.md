@@ -1,7 +1,7 @@
 # FCircularStepButton
 
 
-![Alt text](sample.gif) / ![](sample.gif)
+![Alt text](sample.gif)
 
 
 
