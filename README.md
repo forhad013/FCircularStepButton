@@ -27,13 +27,13 @@ Step 2. Add the dependency
 
 # Usage
 
-*setCurrentStep(int number)
-*setDistance(int number) (Distance between each arc)
-*setImageViewSize(int imageViewSize) (Square size of imageview)
-*setButtonImageSrc(int buttonImageSrc)
-*setNumberOfSteps(int numberOfSteps)
-*setSubCircleColor(int subCircleColor) (secondary circle color)
-*setCircleColor(int circleColor) (main circle color)
+- setCurrentStep(int number)
+- setDistance(int number) (Distance between each arc)
+- setImageViewSize(int imageViewSize) (Square size of imageview)
+- setButtonImageSrc(int buttonImageSrc)
+- setNumberOfSteps(int numberOfSteps)
+- setSubCircleColor(int subCircleColor) (secondary circle color)
+- setCircleColor(int circleColor) (main circle color)
 
 
  fCircularStepButton.setOnClickListener(view -> {
