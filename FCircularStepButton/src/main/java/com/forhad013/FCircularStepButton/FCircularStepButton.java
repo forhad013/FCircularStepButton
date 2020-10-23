@@ -19,12 +19,9 @@ import com.forhad013.FCircularStepButton.R;
 public class FCircularStepButton extends RelativeLayout {
 
 
-
-
     public void setShouldAnimate(boolean shouldAnimate) {
         this.shouldAnimate = shouldAnimate;
     }
-
 
     public float getArcAngle() {
         return arcAngle;
@@ -119,7 +116,9 @@ public class FCircularStepButton extends RelativeLayout {
 
 
     private int nextArcWillStartFrom;
+
     private int strokeWidth;
+
     private float arcAngle = 0 ;
 
     public int getStepAngle() {
@@ -131,14 +130,21 @@ public class FCircularStepButton extends RelativeLayout {
     }
 
     private int stepAngle;
+
     private int startingAngle;
+
     private int distance;
+
     private int imageViewSize;
+
     private Paint mPaintForSubCircle, mPaintForCircle;
+
     private RectF mRect;
+
     private Context context;
+
     private ImageView imageView;
-    private RelativeLayout mainContent;
+
 
 
     public FCircularStepButton(Context context) {
@@ -189,7 +195,6 @@ public class FCircularStepButton extends RelativeLayout {
         FCircularStepButton view = (FCircularStepButton) inflater.inflate(R.layout.circular_step_button, this);
 
         imageView = view.findViewById(R.id.image);
-        mainContent = view.findViewById(R.id.mainContent);
         imageView.setImageResource(buttonImageSrc);
 
         LayoutParams pm = new LayoutParams(imageViewSize, imageViewSize);
