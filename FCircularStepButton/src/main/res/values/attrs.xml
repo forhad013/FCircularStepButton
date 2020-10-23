@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <declare-styleable name="FCircularStepButton">
+        <attr name="circleColor" format="integer"/>
+        <attr name="src" format="reference"/>
+        <attr name="subCircleColor" format="reference"/>
+        <attr name="distance" format="integer"/>
+        <attr name="circleWidth" format="integer" />
+<!--        <attr name = "android:"strokeWidth" format="integer"/>-->
+        <attr name="startAngle" format="integer"/>
+        <attr name="numberOfSteps" format="integer"/>
+        <attr name="currentStep" format="integer"/>
+        <attr name="imageViewSize" format="integer"/>
+
+
+    </declare-styleable>
+<!--    <declare-styleable name="FArcView">-->
+<!--        <attr name="arcCircleColor" format="integer"/>-->
+<!--        <attr name="android:strokeWidth" />-->
+<!--        <attr name="arcStartAngle" format="integer"/>-->
+<!--        <attr name="arcNumberOfSteps" format="integer"/>-->
+<!--        <attr name="arcCurrentStep" format="integer"/>-->
+
+
+<!--    </declare-styleable>-->
+</resources>

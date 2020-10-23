@@ -1,0 +1,3 @@
+include ':FCircularStepButton'
+include ':app'
+rootProject.name = "FCircularStepButtonExampleProject"

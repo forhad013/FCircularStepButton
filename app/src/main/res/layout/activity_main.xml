@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainContent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="30dp"
+        android:text="Sample"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:id="@+id/textview"/>
+
+
+    <com.forhad013.FCircularStepButton.FCircularStepButton
+        android:id="@+id/stepButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:circleColor="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp"
+        app:currentStep="0"
+        app:distance="12"
+        app:imageViewSize="50"
+        app:numberOfSteps="4"
+        app:src="@android:drawable/ic_media_play"
+        app:circleWidth="10"
+        app:subCircleColor="@android:color/darker_gray"
+        tools:ignore="MissingClass,MissingConstraints">
+
+    </com.forhad013.FCircularStepButton.FCircularStepButton>
+</androidx.constraintlayout.widget.ConstraintLayout>

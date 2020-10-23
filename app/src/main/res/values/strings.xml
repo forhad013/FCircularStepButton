@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FCircularStepButtonExampleProject</string>
+    <string name="text1">Welcome to my world</string>
+    <string name="text2">You will be amazed</string>
+    <string name="text3">Come enjoy the party</string>
+    <string name="text4">Let the show begin</string>
+    <string name="restart">Click to restart</string>
+</resources>
