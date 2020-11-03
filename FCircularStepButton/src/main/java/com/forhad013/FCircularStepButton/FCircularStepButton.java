@@ -14,7 +14,8 @@ import android.widget.RelativeLayout;
 
 import androidx.annotation.Nullable;
 
-import com.forhad013.FCircularStepButton.R;
+import com.forhad013.R;
+
 
 public class FCircularStepButton extends RelativeLayout {
 
