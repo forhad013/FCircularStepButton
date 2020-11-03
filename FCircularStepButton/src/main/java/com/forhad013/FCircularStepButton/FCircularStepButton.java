@@ -219,7 +219,7 @@ public class FCircularStepButton extends RelativeLayout {
         mPaintForSubCircle.setStyle(Paint.Style.STROKE);
         mPaintForSubCircle.setStrokeWidth(strokeWidth);
         mPaintForSubCircle.setColor(getResources().getColor(subCircleColor));
-        mRect = new RectF(10, 10, this.getWidth(), this.getHeight());
+        mRect = new RectF(0, 0, this.getWidth(), this.getHeight());
 
 
         int arcsStartAngle = -90;
